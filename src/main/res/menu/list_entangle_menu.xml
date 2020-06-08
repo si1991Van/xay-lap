@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/all"
+        android:title="@string/all" />
+    <item
+        android:id="@+id/wait_for_confirm_cnt"
+        android:title="@string/wait_for_confirm_cnt" />
+    <item
+        android:id="@+id/confirmed_cnt"
+        android:title="@string/confirmed_cnt" />
+</menu>

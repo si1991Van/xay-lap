@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEdt"
+    android:clickable="true"
+    tools:context="com.viettel.construction.screens.menu_ex_warehouse.InventoryDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_back_layout" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:background="@drawable/border_dashboard"
+            android:orientation="vertical"
+            android:padding="2dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="8dp">
+
+                <TextView
+                    style="@style/BlackText_medium"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="8dp"
+                    android:textStyle="bold"
+                    android:text="Tên VTTB"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_material_name"
+                    style="@style/BlackText_medium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+
+                    android:maxLines="2"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/colorWhite"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    style="@style/BlackText_medium"
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="8dp"
+                    android:text="Mã VTTB"
+                    android:textStyle="bold"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_material_code"
+                    style="@style/BlackText_medium"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:maxLines="2"
+                    android:paddingRight="8dp"
+                    android:textColor="@color/black" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_detail_material"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbVertical="@drawable/shape_scrollbar"
+            android:scrollbars="vertical" />
+
+
+    </LinearLayout>
+
+    <com.viettel.construction.screens.custom.dialog.CustomProgress
+        android:id="@+id/detail_implement_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

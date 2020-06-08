@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="VTView">
+        <attr name="title" format="string" localization="suggested" />
+        <attr name="subTitle" format="string" />
+        <attr name="color" format="color" />
+        <attr name="style" format="integer" />
+        <attr name="nsIcon" format="integer" />
+        <attr name="textAllCap" format="boolean" />
+        <attr name="hasBack" format="boolean" />
+    </declare-styleable>
+</resources>

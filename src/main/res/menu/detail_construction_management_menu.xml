@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/all"
+        android:title="@string/all" />
+    <item
+        android:id="@+id/did_not_perform"
+        android:title="@string/did_not_perform" />
+    <item
+        android:id="@+id/in_process"
+        android:title="@string/in_process_1" />
+
+    <item
+        android:id="@+id/in_Pending"
+        android:title="@string/Pending" />
+    <item
+        android:id="@+id/finished"
+        android:title="@string/finished" />
+    <item
+        android:id="@+id/low_process"
+        android:title="@string/low_process" />
+    <item
+        android:id="@+id/on_schedule"
+        android:title="@string/on_schedule_menu" />
+</menu>

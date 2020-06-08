@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@drawable/custom_dialog"
+        android:layout_width="@dimen/dimen_300"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_20"
+            android:background="@drawable/custom_title_dialog" />
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/black_base"
+            android:text="@string/dialog_title_please_comment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:layout_marginTop="@dimen/dimen_15"
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Loại ý kiến" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_weight="5"
+                android:layout_marginRight="@dimen/dimen_5"
+                android:background="@drawable/searchbox_border">
+                <Spinner
+                    android:id="@+id/sp_type_please_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Nội dung" />
+
+            <EditText
+                android:id="@+id/edtContent"
+                style="@style/BlackText_medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_weight="5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/white"
+                android:hint="Nội dung"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_5"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText_small"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="Đối tượng xin ý kiến" />
+
+            <EditText
+                android:id="@+id/edtUser"
+                style="@style/BlackText_medium"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_44"
+                android:layout_weight="5"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@android:color/white"
+                android:hint="Đối tượng xin ý kiến"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dimen_5"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_cancle_dialog_of_cancle"
+                android:textSize="18sp"
+                android:background="@drawable/spr_background_text"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/dialog_cancle"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_50" />
+            <TextView
+                android:id="@+id/txt_dialog_confirm_of_cancle"
+                android:textSize="18sp"
+                android:background="@drawable/spr_background_text"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/agree"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_50" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

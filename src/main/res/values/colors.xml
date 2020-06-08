@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00608c</color>
+    <color name="colorPrimaryDark">#004e71</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="grey">#CCC</color>
+    <color name="grey1">#ECECEC</color>
+    <color name="grey2">#CECECE</color>
+    <color name="white">#FFFFFF</color>
+
+
+
+    <color name="c1">#c6c6c6</color>
+    <color name="colorBlack">#212121</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="black">#131313</color>
+    <color name="black_base">#000</color>
+    <color name="c2">#8e8e8e</color>
+    <color name="c3">#fff</color>
+    <color name="c4">#04ff00</color>
+    <color name="c5">#00608c</color>
+    <color name="c5_darker">#004e71</color>
+    <color name="c6">#f18f20</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="colorEdt">@color/grey1</color>
+    <color name="colorAddNewWork">#25b358</color>
+    <color name="complete_color">#25b358</color>
+    <color name="pause_color">#ef1515</color>
+    <color name="in_process_color">#ffad4e</color>
+    <color name="grey_color">#c2c2c2</color>
+
+    <!-- set color piechart -->
+
+    <color name="c7">#e77511</color>
+    <color name="c8">#3674df</color>
+    <color name="c9">#e9d900</color>
+    <!--<color name="c10">#069e31</color>-->
+    <color name="c10">#63da38</color>
+    <color name="c11">#1523c6</color>
+    <color name="c12">#af4e4e</color>
+    <color name="c13">#448eb9</color>
+    <color name="gray">#c6c6c6</color>
+
+    <color name="c19">#EF7E30</color>
+    <color name="c20">#A5A5A5</color>
+    <color name="c21">#5C9BD5</color>
+    <color name="c21_1">#63da38</color>
+    <color name="c22">#FFC100</color>
+    <color name="c23">#ffad4e</color>
+    <color name="c24">#636362</color>
+
+
+    <!-- color other -->
+
+    <color name="c14">#ef1515</color>
+    <color name="c15">#fff</color>
+    <color name="c16">#f5f5f5</color>
+    <color name="c17">#2dbcab</color>
+    <color name="c18">#419ed9</color>
+    <color name="c30">#25b358</color>
+    <color name="c31">#c2c2c2</color>
+    <color name="c32">#d7d7d7</color>
+    <color name="c33">#ededed</color>
+
+    <color name="selected">#2FAFAFAF</color>
+    <color name="color_dove_gray">#666666</color>
+
+</resources>

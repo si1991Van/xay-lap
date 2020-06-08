@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ln_construction"
+    android:background="@drawable/recyclerview_item"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_marginTop="@dimen/dimen_10"
+        style="@style/BlackText_small"
+        android:gravity="center_vertical"
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <TextView
+        android:visibility="visible"
+        android:id="@+id/tv_address"
+        style="@style/BlackText_medium_gray"
+        android:text="Địa chỉ"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+
+</LinearLayout>

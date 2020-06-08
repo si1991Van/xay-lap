@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/content"
+android:clickable="false"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+<ImageView
+    android:id="@+id/img_loading"
+    android:layout_width="@dimen/progress_bar_loading_size"
+    android:layout_height="@dimen/progress_bar_loading_size"
+    android:layout_gravity="center"
+    android:src="@drawable/ic_progressbar_loading" />
+
+<ImageView
+    android:id="@+id/img_viettel"
+    android:layout_width="@dimen/ic_viettel_logo_width"
+    android:layout_height="@dimen/ic_viettel_logo_height"
+    android:layout_gravity="center"
+    android:layout_marginRight="@dimen/ic_viettel_logo_margin"
+    android:src="@drawable/ic_viettel_logo" />
+</FrameLayout>

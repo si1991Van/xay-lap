@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/bill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/selected"
+        android:orientation="vertical"
+        android:layout_marginBottom="@dimen/dimen_5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_4"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/tv_index"
+                style="@style/BlackText_medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="0.3" />
+
+            <TextView
+                android:id="@+id/txt_code"
+                style="@style/BlackText_medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.7"
+                android:ellipsize="middle"
+                android:singleLine="true" />
+            <ImageView
+                android:id="@+id/imv_delete"
+                android:layout_width="@dimen/dimen_30"
+                android:layout_height="@dimen/dimen_30"
+                android:src="@drawable/ic_delete_forever_red_24dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_4"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/BlackText_medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="0.3"
+                android:text="@string/construction" />
+
+            <TextView
+                android:id="@+id/txt_construction_code"
+                style="@style/BlackText_medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.7"
+                android:ellipsize="middle"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ln_ContractCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_4"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/BlackText_medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="0.3"
+                android:text="@string/contract" />
+
+            <TextView
+                android:id="@+id/txt_contract_code"
+                style="@style/BlackText_medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.7"
+                android:ellipsize="middle"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_4"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/BlackText_medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="0.3"
+                android:text="@string/release_date" />
+
+            <TextView
+                android:id="@+id/txt_release_date"
+                style="@style/BlackText_medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.7"
+                android:ellipsize="end"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/dimen_4"
+            android:weightSum="1">
+
+            <TextView
+                style="@style/BlackText_medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_weight="0.3"
+                android:text="@string/status" />
+
+            <TextView
+                android:id="@+id/txt_status"
+                style="@style/BlackText_medium"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="0.7"
+                android:ellipsize="end"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/dimen_4"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/tv_status_bg"
+                    style="@style/BlackText_medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dimen_4"
+                    android:layout_weight="0.3"
+                    android:text="@string/condition" />
+
+                <TextView
+                    android:id="@+id/txt_condition"
+                    style="@style/BlackText_medium"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="0.7"
+                    android:ellipsize="end"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

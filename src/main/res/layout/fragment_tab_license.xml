@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="85dp"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="Thời gian"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="44dp"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:background="@drawable/border_dashboard"
+            android:id="@+id/tvTime"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:hint="__/__/____"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="File đính kèm"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgCapture"
+            android:background="?attr/selectableItemBackground"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_camera" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="0dp"
+            android:id="@+id/rcvImage"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

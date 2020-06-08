@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/header_close_send_layout" />
+
+    <GridView
+        android:id="@+id/grdViewData"
+        android:numColumns="3"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/tvNodata"
+        android:visibility="gone"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:text="@string/no_data"
+        android:textColor="@color/grey"
+        android:gravity="center"
+        android:layout_height="0dp" />
+
+    <Button
+        android:background="@drawable/selector_button_delete"
+        android:id="@+id/btnDeleteImage"
+        android:layout_margin="8dp"
+        android:textColor="#FFF"
+        android:visibility="gone"
+        android:text="Xóa các ảnh đã chọn"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+</LinearLayout>

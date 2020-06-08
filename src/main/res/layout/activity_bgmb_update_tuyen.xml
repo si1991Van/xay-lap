@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true">
+
+
+    <LinearLayout
+        android:id="@+id/header_update"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/c5"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgBack_update"
+            android:layout_width="50dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="6dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/txtHeader_update"
+            style="@style/WhiteText_large_bold"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/txtSave_update"
+            style="@style/WhiteText_large_bold"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/button_header_selector"
+            android:gravity="center"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_update">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_52"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_marginRight="@dimen/dimen_8"
+                android:gravity="center_vertical">
+
+                <TextView
+                    style="@style/BlackText_medium_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="Loại cáp"
+                    android:textColor="@android:color/black" />
+
+
+                <ImageView
+                    android:id="@+id/btn_camera_Update"
+                    android:layout_width="@dimen/dimen_32"
+                    android:layout_height="@dimen/dimen_32"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="?android:attr/selectableItemBackground"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_camera" />
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/radioGroup_character"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rDQuangNgamUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="Quang ngầm" />
+
+                <RadioButton
+                    android:id="@+id/rDQuangTreoUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:checked="false"
+                    android:text="Quang treo" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey1" />
+
+            <LinearLayout
+                android:id="@+id/layoutQuangNgam"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_weight="2"
+                    android:padding="@dimen/dimen_8">
+
+                    <TextView
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tổng độ dài tuyến (m)" />
+
+                    <EditText
+                        android:id="@+id/edtDodaiTuyenQN"
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_weight="1"
+                        android:hint="Nhập độ dài"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_weight="2"
+                    android:padding="@dimen/dimen_8">
+
+                    <TextView
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Chôn trực tiếp (m)" />
+
+                    <EditText
+                        android:id="@+id/edtDoDaiTrucTiep"
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:hint="Nhập chiều dài"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_weight="2"
+                    android:padding="@dimen/dimen_8">
+
+                    <TextView
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Cáp trong cống bể xây (m)" />
+
+                    <EditText
+                        android:id="@+id/edtCapBexay"
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:hint="Nhập chiều dài"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_weight="2"
+                    android:padding="@dimen/dimen_8">
+
+                    <TextView
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:text="Cáp trong cống bể có sẵn (m)" />
+
+                    <EditText
+                        android:id="@+id/edtCapBeCoSan"
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_weight="1"
+                        android:hint="Nhập chiều dài"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutQuangTreo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_weight="2"
+                    android:padding="@dimen/dimen_8">
+
+                    <TextView
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Tổng độ dài tuyến (m)" />
+
+                    <EditText
+                        android:id="@+id/edtDodaiTuyenQT"
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:hint="Nhập độ dài"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_weight="2"
+                    android:padding="@dimen/dimen_8">
+
+                    <TextView
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Trồng cột (cột)" />
+
+                    <EditText
+                        android:id="@+id/edtTrongCot"
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_marginRight="16dp"
+                        android:layout_weight="1"
+                        android:hint="Nhập số cột"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_weight="2"
+                    android:padding="@dimen/dimen_8">
+
+                    <TextView
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cột có sẵn (cột)" />
+
+                    <EditText
+                        android:id="@+id/edtCotCosan"
+                        style="@style/BlackText_medium"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginLeft="@dimen/dimen_8"
+                        android:layout_weight="1"
+                        android:hint="Nhập số cột"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1"
+                android:background="@color/grey1" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/checkboxVuongUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vướng"
+                    android:textAllCaps="true"
+                    android:textColor="@android:color/black" />
+
+                <TextView
+                    android:id="@+id/titleVuongUpdate"
+                    style="@style/BlackText_medium"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Nội dung Vướng"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/noidungVuongUpdate"
+                    style="@style/BlackText_medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginRight="16dp"
+                    android:hint="Nhập nội dung vướng..." />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/grey1" />
+
+            <TextView
+                style="@style/BlackText_medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="Ảnh biên bản nhận BGMB"
+                android:textStyle="bold" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_list_image_update"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_80"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:layout_marginTop="@dimen/dimen_16"
+                android:layout_marginRight="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_16"
+                android:scrollbarSize="5dp"
+                android:scrollbarThumbHorizontal="@drawable/shape_scrollbar"
+                android:scrollbars="horizontal" />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <com.viettel.construction.screens.custom.dialog.CustomProgress
+        android:id="@+id/prg_loading_update"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+</RelativeLayout>

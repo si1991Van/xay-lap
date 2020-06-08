@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:background="@drawable/header_expandable_item"
+        android:id="@+id/txtHeader"
+        android:text="Header"
+        android:paddingLeft="8dp"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_width="match_parent"
+        android:paddingRight="4sp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:lines="1"
+        android:ellipsize="end"
+        android:textColor="@color/colorPrimary"
+        android:drawableRight="@drawable/expand"
+        android:layout_height="48dp" />
+
+</LinearLayout>

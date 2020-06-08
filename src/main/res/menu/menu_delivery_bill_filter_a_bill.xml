@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/all"
+        android:title="@string/all" />
+    <item
+        android:id="@+id/received"
+        android:title="@string/received_bill_menu" />
+    <item
+        android:id="@+id/wait_for_receive"
+        android:title="@string/wait_for_receive" />
+    <item
+        android:id="@+id/rejected"
+        android:title="@string/rejected" />
+
+    <item
+        android:id="@+id/wait_confirm"
+        android:title="@string/cho_xac_nhan" />
+
+    <item
+        android:id="@+id/confirm"
+        android:title="@string/da_xac_nhan" />
+
+    <item
+        android:id="@+id/dont_confirm"
+        android:title="@string/TuChoiXacNhan" />
+
+    <item
+        android:id="@+id/over_date_kpi"
+        android:title="@string/qua_han" />
+</menu>

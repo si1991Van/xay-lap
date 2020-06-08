@@ -1,0 +1,218 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:clickable="true"
+    tools:context=".screens.tabs.TabMenuChartFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_128"
+            android:background="@color/c3"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_92"
+                    android:layout_height="@dimen/dimen_92"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_profile" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtName"
+                    style="@style/BlackText_large"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="bottom"
+                    android:text="Nguyen Van A" />
+
+                <TextView
+                    android:id="@+id/txt_phone"
+                    style="@style/BlackText_large"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="097777707" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1" />
+
+        <LinearLayout
+            android:id="@+id/construction_management"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_56"
+            android:layout_marginTop="@dimen/dimen_2"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/BlackText_large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:drawableLeft="@drawable/ic_construction"
+                android:drawablePadding="@dimen/dimen_16"
+                android:paddingLeft="@dimen/dimen_16"
+                android:text="Thông tin công trình" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1" />
+
+
+        <LinearLayout
+            android:id="@+id/manage_problem_with_cdt"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_56"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText_large"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:drawableLeft="@drawable/ic_busy"
+                android:drawablePadding="@dimen/dimen_16"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_16"
+                android:text="Quản lý vướng" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1" />
+
+        <LinearLayout
+            android:id="@+id/ln_history"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_56"
+
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText_large"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:drawableLeft="@drawable/ic_time_management"
+                android:drawablePadding="@dimen/dimen_16"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_16"
+                android:text="Lịch sử bàn giao VTTB" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1" />
+
+        <LinearLayout
+            android:id="@+id/ln_for_debt_user"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_56"
+
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText_large"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/dimen_8"
+                android:drawableLeft="@drawable/ic_doisoat"
+                android:drawablePadding="@dimen/dimen_16"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/dimen_16"
+                android:text="@string/debt_user" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/sign_out"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_56"
+        android:layout_marginTop="@dimen/dimen_2"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <TextView
+            style="@style/BlackText_large"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/ic_logout"
+            android:drawablePadding="@dimen/dimen_16"
+            android:gravity="center_vertical"
+            android:text="@string/logout" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_40"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/txtVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Version 1.0"
+            android:textSize="@dimen/dimentext_12"
+            android:textColor="@color/c2"/>
+    </LinearLayout>
+</LinearLayout>

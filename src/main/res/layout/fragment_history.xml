@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorEdt"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/c5">
+
+        <ImageView
+            android:id="@+id/btn_back_pxk"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dimen_8"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:id="@+id/tv_title_history_handover_material"
+            style="@style/WhiteText_large_bold"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_44"
+        android:background="@color/colorEdt">
+
+        <EditText
+            android:id="@+id/edt_search"
+            style="@style/BlackText_medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_32"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_weight="9"
+            android:background="@android:color/white"
+            android:drawableLeft="@drawable/ic_search_find_detail"
+            android:drawablePadding="@dimen/dimen_8"
+            android:hint="@string/search"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/dimen_8" />
+
+        <ImageView
+            android:id="@+id/iv_filter_cv"
+            android:layout_width="@dimen/dimen_32"
+            android:layout_height="@dimen/dimen_32"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/dimen_8"
+            android:layout_weight="1"
+            android:background="@drawable/ic_filter" />
+
+    </LinearLayout>
+
+    <com.viettel.construction.screens.custom.viewpager.CustomViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/c3"
+        android:visibility="gone"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcv_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_marginRight="@dimen/dimen_4"
+        android:layout_weight="1"
+        android:scrollbarSize="5dp"
+        android:scrollbarThumbVertical="@drawable/shape_scrollbar"
+        android:scrollbars="vertical"
+        android:visibility="visible">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/supplier_a"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn"
+            android:text="Tiếp nhận"
+            android:textAllCaps="false"
+            android:textColor="@color/c5"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/supplier_b"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn"
+            android:text="Bàn giao"
+            android:textAllCaps="false"
+            android:textColor="@color/c5"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@drawable/selector_tab_layout"
+        app:tabIndicatorHeight="0dp"
+        app:tabSelectedTextColor="#ffff"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:tabTextColor="@color/c5" />
+
+</LinearLayout>

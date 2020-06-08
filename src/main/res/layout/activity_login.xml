@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="top"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imv_logo"
+                android:layout_width="@dimen/dimen_192"
+                android:layout_height="@dimen/dimen_128"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_32"
+                android:layout_marginTop="@dimen/dimen_60"
+                android:background="@drawable/logo" />
+
+            <EditText
+                android:id="@+id/edt_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_36"
+                android:layout_below="@id/imv_logo"
+                android:layout_marginBottom="@dimen/dimen_16"
+                android:layout_marginLeft="@dimen/dimen_32"
+                android:layout_marginRight="@dimen/dimen_32"
+                android:background="@drawable/shape_bgr_edt"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="@dimen/dimen_16"
+                android:hint="Tài khoản TTNS"
+                android:inputType="text"
+                android:paddingLeft="@dimen/dimen_10" />
+
+            <EditText
+                android:id="@+id/edt_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_36"
+                android:layout_below="@id/edt_user_name"
+                android:layout_marginLeft="@dimen/dimen_32"
+                android:layout_marginRight="@dimen/dimen_32"
+                android:background="@drawable/shape_bgr_edt"
+                android:drawableLeft="@drawable/ic_pass"
+                android:drawablePadding="@dimen/dimen_16"
+                android:hint="Mật khẩu"
+                android:inputType="textPassword"
+                android:paddingLeft="@dimen/dimen_10" />
+
+            <CheckBox
+                android:id="@+id/cb_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/dimen_32"
+                android:layout_marginTop="@dimen/dimen_5"
+                android:text="@string/login_s08" />
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_48"
+                android:layout_margin="@dimen/dimen_32"
+                android:background="@drawable/button_border_selector"
+                android:text="@string/dangnhap"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <com.viettel.construction.screens.custom.dialog.CustomProgress
+            android:id="@+id/prg_loading"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+
+</ScrollView>

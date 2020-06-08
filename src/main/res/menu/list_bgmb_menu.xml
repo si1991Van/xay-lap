@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/all"
+        android:title="@string/all" />
+    <item
+        android:id="@+id/notreceived"
+        android:title="Chưa nhận" />
+    <item
+        android:id="@+id/received"
+        android:title="Đã nhận đủ điều kiện" />
+    <item
+        android:id="@+id/receive_vuong"
+        android:title="Đã nhận có vướng" />
+    <item
+        android:id="@+id/receive_vuong_vattu"
+        android:title="Đã nhận có vướng có vật tư" />
+
+    <item
+        android:id="@+id/receive_vattu"
+        android:title="Đã nhận có vật tư " />
+</menu>

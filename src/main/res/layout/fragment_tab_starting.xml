@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="85dp"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:text="Thời gian"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="130dp"
+            android:layout_height="44dp"
+            android:background="@drawable/border_dashboard"
+            android:id="@+id/tvTime"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:gravity="center_vertical"
+            android:paddingLeft="4dp"
+            android:hint="__/__/____"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

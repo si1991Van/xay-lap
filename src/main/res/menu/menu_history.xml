@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/all_history"
+        android:title="@string/all" />
+    <item
+        android:id="@+id/wait_history"
+        android:title="@string/wait_for_confirm_1" />
+    <item
+        android:id="@+id/received_history"
+        android:title="@string/confirm_category" />
+    <item
+        android:id="@+id/refuse_history"
+        android:title="@string/rejected" />
+</menu>

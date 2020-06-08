@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.fivehundredpx:greedo-layout:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-greedo-layout-1.1.0.aar/9dce8f4aa13e5ddc9861f1813b1e188c/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/jetified-greedo-layout-1.1.0.aar/9dce8f4aa13e5ddc9861f1813b1e188c/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

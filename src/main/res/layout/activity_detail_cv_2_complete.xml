@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/WhiteText_large_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@color/c5"
+                    android:gravity="center"
+                    android:text="@string/detail" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_52"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_marginRight="@dimen/dimen_8"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/BlackText_medium_bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="@string/progress_by_percent"
+                            android:textColor="@android:color/black" />
+
+                        <EditText
+                            android:id="@+id/edt_process"
+                            android:layout_width="@dimen/dimen_52"
+                            android:clickable="false"
+                            android:focusableInTouchMode="false"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:layout_height="@dimen/dimen_32"
+                            android:background="@drawable/shape_bgr_edt"
+                            android:gravity="center_vertical"
+                            android:inputType="numberDecimal"
+                            android:paddingLeft="@dimen/dimen_8" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/btn_camera"
+                        android:clickable="false"
+                        android:layout_width="@dimen/dimen_32"
+                        android:layout_height="@dimen/dimen_32"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_camera" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_110"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/dimen_4">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            style="@style/BlackText_medium"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Nội dung:" />
+
+                        <TextView
+                            android:id="@+id/tv_content_cv_in_process"
+                            style="@style/BlackText_medium"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/BlackText_medium"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Công trình:" />
+
+                        <TextView
+                            android:id="@+id/tv_construction_name_in_process"
+                            style="@style/BlackText_medium"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/BlackText_medium"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:text="Hạng mục:" />
+
+                        <TextView
+                            android:id="@+id/tv_category_name_in_process"
+                            style="@style/BlackText_medium"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <TextView
+                            style="@style/BlackText_medium"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="top"
+                            android:text="Thời gian theo KH: " />
+
+                        <TextView
+                            android:id="@+id/tv_estimate_time_in_process"
+                            style="@style/BlackText_medium"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_1"
+                        android:background="@color/gray" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dimen_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_72"
+                    android:orientation="horizontal"
+                    android:paddingLeft="@dimen/dimen_4">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="10"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tv"
+                                style="@style/BlackText_medium"
+                                android:layout_width="@dimen/dimen_164"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Hình thức thi công" />
+
+                            <LinearLayout
+                                android:layout_width="165dp"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dimen_16"
+                                android:layout_toRightOf="@id/tv"
+                                android:background="@drawable/create_simple_spinner_dropdown"
+                                android:orientation="vertical">
+
+                                <Spinner
+                                    android:id="@+id/spn_construction"
+                                    android:layout_width="155dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginRight="@dimen/dimen_15" />
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_marginTop="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/tv1"
+                                style="@style/BlackText_medium"
+                                android:layout_width="@dimen/dimen_164"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:text="Khối lượng (m):" />
+
+                            <EditText
+                                android:id="@+id/edt_amount"
+                                android:clickable="false"
+                                android:focusableInTouchMode="false"
+                                android:cursorVisible="false"
+                                android:focusable="false"
+                                android:layout_width="164dp"
+                                android:inputType="number"
+                                android:paddingRight="@dimen/dimen_5"
+                                android:layout_height="45dp"
+                                android:layout_marginLeft="@dimen/dimen_16"
+                                android:layout_toRightOf="@id/tv1"
+                                android:background="@drawable/shape_bgr_edt"
+                                android:gravity="right"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/btn_add"
+                            android:clickable="false"
+                            android:background="?android:attr/selectableItemBackground"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/ic_down_arrow" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:background="@color/gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcv_construction_spn"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_92"
+                    android:paddingBottom="@dimen/dimen_4"
+                    android:paddingLeft="@dimen/dimen_4"
+                    android:scrollbarSize="5dp"
+                    android:scrollbarThumbVertical="@drawable/shape_scrollbar"
+                    android:scrollbars="vertical"
+                    android:paddingRight="@dimen/dimen_4" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:background="@color/gray" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_36" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:background="@color/gray" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_list_image_in_process"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80"
+                    android:layout_marginBottom="@dimen/dimen_4"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_marginRight="@dimen/dimen_8"
+                    android:layout_marginTop="@dimen/dimen_4"
+                    android:scrollbarSize="5dp"
+                    android:scrollbarThumbHorizontal="@drawable/shape_scrollbar"
+                    android:scrollbars="horizontal" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:background="@color/gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_44"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/btn_stop"
+                        android:visibility="gone"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:gravity="center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/img_status"
+                            android:clickable="false"
+                            android:layout_width="@dimen/dimen_52"
+                            android:layout_height="@dimen/dimen_52"
+                            android:layout_gravity="center"
+                            android:padding="@dimen/dimen_8"
+                            android:src="@drawable/ic_stop_signal" />
+
+                        <TextView
+                            android:id="@+id/txt_status"
+                            style="@style/BlackText_medium"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:text="Tạm dừng" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/dimen_1"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dimen_8"
+                        android:layout_marginTop="@dimen/dimen_8"
+                        android:background="@color/gray" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1"
+                    android:background="@color/gray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_40"
+                    android:layout_marginLeft="@dimen/dimen_8"
+                    android:layout_marginRight="@dimen/dimen_8"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/btn_details_inprocess"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="@dimen/dimen_10"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="@string/back"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/txt_save"
+                        android:visibility="gone"
+                        android:layout_width="50dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="?android:attr/selectableItemBackground"
+                        android:text="@string/save"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <com.viettel.construction.screens.custom.dialog.CustomProgress
+                android:id="@+id/prg_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

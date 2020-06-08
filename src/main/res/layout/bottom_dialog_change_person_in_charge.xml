@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorEdt"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/tv_change"
+            style="@style/BlueText_medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@drawable/selector_btn_work"
+            android:gravity="center"
+            android:layout_margin="@dimen/dimen_8"
+            android:textAllCaps="false"
+            android:text="@string/change_person"
+            android:textColor="@drawable/selector_text_color" />
+
+        <Button
+            android:id="@+id/tv_cancel"
+            style="@style/BlueText_medium"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50"
+            android:background="@drawable/selector_btn_work"
+            android:gravity="center"
+            android:layout_margin="@dimen/dimen_8"
+            android:textAllCaps="false"
+            android:text="@string/cancel"
+            android:textColor="@drawable/selector_text_color" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

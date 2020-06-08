@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home_menu_black_24dp"
+        android:title="@string/dashboard"
+        />
+    <item
+        android:id="@+id/frag1"
+        android:icon="@drawable/ic_daytask_menu_black_24dp"
+        android:title="@string/viec_trong_ngay"
+        />
+    <item
+        android:id="@+id/frag2"
+        android:icon="@drawable/ic_feedback_menu_black_24dp"
+        android:title="@string/phan_anh"
+        />
+    <item
+        android:id="@+id/frag3"
+        android:icon="@drawable/ic_category_success_black_24dp"
+        android:title="@string/hang_muc_ht"
+        />
+    <item
+        android:id="@+id/frag4"
+        android:icon="@drawable/ic_menu_black_24dp"
+        android:title="@string/more"
+        />
+
+</menu>

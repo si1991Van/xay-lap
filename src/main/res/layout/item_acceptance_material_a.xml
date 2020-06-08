@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_85"
+    android:paddingTop="@dimen/dimen_8">
+
+    <TextView
+        android:id="@+id/tv_postion"
+        style="@style/BlackText_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dimen_16"
+        android:text="1." />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/BlackText_medium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_toRightOf="@id/tv_postion"
+        android:text="Cáp trục đồng" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        style="@style/BlackText_medium_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@id/tv_name"
+        android:text="Số lượng:" />
+
+    <TextView
+        android:textSize="18sp"
+        android:id="@+id/tv_number_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="@dimen/dimen_4"
+        android:layout_toRightOf="@id/tv_number"
+        android:text="10"
+        android:textColor="@android:color/holo_red_light" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/BlackText_medium_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_number"
+        android:layout_marginLeft="@dimen/dimen_8"
+        android:layout_toRightOf="@id/tv_postion"
+        android:text="Số lượng thực tế:" />
+
+    <EditText
+        android:id="@+id/edt_number_real"
+        android:layout_width="@dimen/dimen_64"
+        android:layout_height="@dimen/dimen_32"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dimen_16"
+        android:layout_marginRight="@dimen/dimen_8"
+        android:background="@drawable/shape_bgr_edt"
+        android:gravity="right"
+        android:hint="0"
+        android:inputType="number"
+        android:paddingRight="@dimen/dimen_8" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray" />
+
+</RelativeLayout>

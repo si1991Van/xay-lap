@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <LinearLayout
+        android:background="@drawable/custom_dialog"
+        android:layout_width="@dimen/dimen_300"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_20"
+            android:background="@drawable/custom_title_dialog" />
+
+        <TextView
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:textColor="@color/black_base"
+            android:text="@string/dialog_title_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <View
+            android:layout_marginTop="@dimen/dimen_15"
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_reason_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/radio_sai_so_luong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Sai số lượng, chủng loại vật tư/Sai mảng công việc xây lắp và ngoài OS"/>
+            <RadioButton
+                android:id="@+id/radio_sai_don_vi_nhan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sai đơn bị nhận"/>
+        </RadioGroup>a
+
+        <View
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_cancle_dialog_of_cancle"
+                android:textSize="18sp"
+                android:background="@drawable/spr_background_text"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/dialog_cancle"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_50" />
+            <TextView
+                android:id="@+id/txt_dialog_confirm_of_cancle"
+                android:textSize="18sp"
+                android:background="@drawable/spr_background_text"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/agree"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_50" />
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

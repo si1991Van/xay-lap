@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.viettel.construction"
+        minSdkVersion 17
+        targetSdkVersion 28
+        multiDexEnabled true
+        versionCode 35
+        versionName "7.8"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    android {
+        dataBinding {
+            enabled = true
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+    maven { url 'https://github.com/500px/greedo-layout-for-android/raw/master/releases/' }
+    maven { url 'https://maven.google.com' }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'de.greenrobot:eventbus:2.4.0'
+    implementation 'com.fivehundredpx:greedo-layout:1.1.0'
+    implementation 'org.apmem.tools:layouts:1.10@aar'
+    implementation 'androidx.multidex:multidex:2.0.0'
+    implementation 'com.jakewharton:butterknife:10.0.0'
+    implementation 'androidx.vectordrawable:vectordrawable:1.0.0'
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.0.0'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.github.ittianyu:BottomNavigationViewEx:2.0.4'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.1'
+    implementation 'com.github.bumptech.glide:glide:4.6.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.6.1'
+    implementation 'io.github.luizgrp.sectionedrecyclerviewadapter:sectionedrecyclerviewadapter:1.1.3'
+    implementation 'com.google.android.gms:play-services-location:11.8.0'
+    implementation 'net.yslibrary.keyboardvisibilityevent:keyboardvisibilityevent:2.1.0'
+    implementation 'io.reactivex:rxandroid:1.2.0'
+    implementation 'io.reactivex:rxjava:1.1.8'
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    // implementation for using paging
+    implementation 'android.arch.paging:runtime:2.1.0'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+
+
+    // implementation for using paging, not using volley
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+
+    //reload
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'  //1.0.5及以前版本的老用户升级需谨慎，API改动过大
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0'
+
+}
+configurations.all {
+    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+        def requested = details.requested
+        if (requested.group == 'com.android.support') {
+            if (!requested.name.startsWith("multidex")) {
+                details.useVersion '25.3.0'
+            }
+        }
+    }
+}
+allprojects {
+    repositories {
+        maven { url "https://jitpack.io" }
+        maven { url "https://maven.google.com" }
+    }
+}

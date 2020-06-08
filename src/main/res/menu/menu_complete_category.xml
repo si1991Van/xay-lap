@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/all"
+        android:title="@string/all" />
+    <item
+        android:id="@+id/confirm"
+        android:title="@string/confirm_category" />
+    <item
+        android:id="@+id/dont_confirm"
+        android:title="@string/dont_complete" />
+
+
+
+</menu>

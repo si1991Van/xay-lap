@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_84">
+
+    <TextVew
+        android:id="@+id/tv_postion"
+        style="@style/BlackText_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:text="1:" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/BlackText_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginTop="@dimen/dimen_8"
+        android:layout_toRightOf="@id/tv_postion"
+        android:text="Cáp đồng trục" />
+
+    <TextView
+        android:id="@+id/tv_number_return"
+        style="@style/BlackText_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_toRightOf="@id/tv_postion"
+        android:text="Số lượng hoàn trả:" />
+
+    <TextView
+        android:layout_marginLeft="@dimen/dimen_5"
+        android:id="@+id/tv_number"
+        style="@style/BlackText_medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:text="10"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_toRightOf="@id/tv_number_return" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_2"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray" />
+
+</RelativeLayout>

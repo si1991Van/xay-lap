@@ -1,0 +1,429 @@
+<resources>
+    <string name="app_name">Công trình</string>
+    <!-- Title dashboard listData cv-->
+    <string name="title_dashboard_list_cv">Công việc(%s)</string>
+    <!--Title Construction Management-->
+    <string name="title_dashboard_list_cv_1">Công trình </string>
+    <!-- Item List CV -->
+    <string name="index_item_cv">%2$d. %1$s</string>
+    <string name="estimate_time_item_cv">Thời hạn: %1$s</string>
+    <string name="construction_name_item_cv">Công trình: %1$s</string>
+    <string name="category_item_name_cv">Hạng mục: %1$s</string>
+    <string name="supervise_info_cv">Người thực hiện: %1$s</string>
+
+    <string name="DashboardCategory">Hạng mục</string>
+
+    <string name="header_name_construction">Công trình: %s</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="setting_date"><font size="24"><b>Cài đặt ngày</b></font></string>
+    <string name="confirm_export">Xác nhận phiếu xuất kho</string>
+    <string name="home">Trang chủ</string>
+    <string name="change_materrial">Đổi soát vật tư</string>
+    <string name="manage">Quản lý vướng với CĐT</string>
+    <string name="confirm_complete_category">Xác nhận hoàn thành hạng mục</string>
+    <string name="handing_over">Bàn giao VTTB</string>
+    <string name="logout">Đăng xuất</string>
+    <string name="login">Đăng nhập</string>
+    <string name="delivery_bill">Phiếu xuất kho</string>
+    <string name="delivery_bill_1">Phiếu xuất kho(%d)</string>
+    <string name="delivery_bill_2">Phiếu xuất kho</string>
+    <string name="item">Hạng mục</string>
+    <string name="acceptance">Nghiệm thu</string>
+    <string name="implement">Vật tư</string>
+    <string name="implement_with_index">VTTB (%s)</string>
+    <string name="list_reflect">Danh sách phản ánh (%s)</string>
+    <string name="list_material">Danh sách VTTB</string>
+    <string name="construction">Công trình</string>
+    <string name="contract">Mã hợp đồng</string>
+    <string name="content_reflect">Nội dung phản ánh</string>
+    <string name="content_handling">Nội dung xử lý</string>
+    <string name="reflect">Phản ánh</string>
+    <string name="dashboard_title">Dashboard</string>
+    <string name="num100">100</string>
+    <string name="warehouse">Kho xuất</string>
+    <string name="bill_creator">Người tạo</string>
+    <string name="create_date">Ngày tạo</string>
+    <string name="receive_date">Ngày nhận</string>
+    <string name="real_date">Ngày thực nhận</string>
+    <string name="release_CN_date">Ngày CN giao</string>
+    <string name="release_date">Ngày xuất</string>
+
+    <string name="work">Công việc</string>
+    <string name="delivery_note">Phiếu xuất kho</string>
+    <string name="inspection">Nghiệm thu</string>
+    <string name="start_date_end_date" formatted="false">%s - %s</string>
+
+    <string name="sum">Tổng</string>
+
+    <string name="for_control">Hoàn trả VTTB</string>
+    <string name="title_detail_construction_management" formatted="false">%s(%s)</string>
+
+
+    <string name="num34">34</string>
+    <string name="acceptanced">Đã nghiệm thu</string>
+    <string name="num24">24</string>
+    <string name="not_tested">Chưa nghiệm thu</string>
+    <string name="spend_per_month">Chỉ tiêu tháng </string>
+    <!-- pie chart 1 -->
+
+    <string name="incomplete">Chưa thực hiện</string>
+    <string name="in_progress">Đang thực hiện</string>
+    <string name="complete">Hoàn thành</string>
+    <string name="on_schedule">Đúng tiến độ (%d)</string>
+    <string name="BGMB_received">Đã nhận (%d)</string>
+    <string name="BGMB_not_received">Chưa nhận (%d)</string>
+    <string name="schedule">Tiến độ</string>
+    <string name="on_schedule_menu">Đúng tiến độ</string>
+    <string name="behind_schedule">Chậm tiến độ (%d) </string>
+    <string name="status_pause">Tạm dừng</string>
+    <string name="status_continue">Tiếp tục</string>
+
+    <string name="incompleteTC">Chưa TH (%d)</string>
+    <string name="in_progressTC">Đang TH (%d)</string>
+    <string name="completeTC">Hoàn thành (%d)</string>
+    <string name="pauseTC">Tạm dừng (%d)</string>
+
+    <string name="complete1">Hoàn thành</string>
+    <string name="pause">Tạm dừng</string>
+    <string name="progress">Thực hiện</string>
+    <string name="progress1">Thi công</string>
+
+    <string name="TiepNhan">Tiếp nhận</string>
+    <string name="BanGiao">Bàn giao</string>
+
+    <string name="ReceiverTitle">Tiếp nhận (%s)</string>
+    <string name="HandOverTitle">Bàn giao (%s)</string>
+
+    <string name="supervising">Giám sát</string>
+    <string name="dashboard_cv_title">Dashboard công việc</string>
+    <string name="text_material_equipment">Vật tư - Thiết bị</string>
+    <string name="text_material">Vật tư</string>
+    <string name="text_equipment">Thiết bị</string>
+    <string name="file">File</string>
+    <string name="image">Ảnh</string>
+    <string name="number_of_work_in_progress">Công việc thực hiện</string>
+    <string name="new_word">Mới</string>
+    <string name="out_of_date">Quá hạn</string>
+    <string name="work_in_supervising">Công việc giám sát</string>
+    <string name="complain">Phản ánh</string>
+    <string name="notification">Thông báo</string>
+    <string name="detail">Chi tiết</string>
+    <string name="progress_by_percent">Tiến độ(%)</string>
+    <string name="e_001">Tên tài khoản không hợp lệ</string>
+    <string name="e_002">Mật khẩu không đúng</string>
+    <string name="error_user_name">Tài khoản hoặc mật khẩu không hợp lệ</string>
+    <string name="error_pass_word">Tài khoản hoặc mật khẩu không hợp lệ</string>
+    <string name="content_cumbersome">Nội dung vướng</string>
+    <string name="sl">Sản lượng</string>
+    <string name="hshc">HSHC</string>
+    <string name="dt">Doanh thu</string>
+    <string name="content">Nội dung</string>
+    <string name="content_with">Nội dung</string>
+    <string name="cancel">Hủy</string>
+    <string name="confirm">Xác nhận</string>
+    <string name="agree">Đồng ý</string>
+    <string name="construction_with">Công trình</string>
+    <string name="categories">Hạng mục</string>
+    <string name="start_day">Ngày bắt đầu</string>
+    <string name="finish_day">Ngày kết thúc</string>
+    <string name="estimated_time">Thời gian theo kế hoạch</string>
+    <string name="real_time">Ngày bắt đầu - ngày kết thúc</string>
+    <string name="note">Ghi chú</string>
+    <string name="input_note">Nhập ghi chú ...</string>
+    <string name="num60">60</string>
+    <string name="refund_equipment">Hoàn trả VTTB (%s)</string>
+    <string name="acceptance_material_equipment">Nghiệm thu VTTB</string>
+    <string name="all">Tất cả</string>
+    <string name="wait_for_acceptance">Chờ nghiệm thu</string>
+    <string name="already_acceptance">Đã nghiệm thu</string>
+    <string name="open">Mở</string>
+    <string name="close">Đóng</string>
+    <string name="index_construction_code">%d. Mã công trình</string>
+    <string name="construction_code">Mã công trình</string>
+    <string name="issueWorkItemDTO">Phản ánh</string>
+
+    <string name="edt_hint_employee"><font size="12"><i>Tìm kiếm Mã, Tên, SĐT, Email</i></font></string>
+    <string name="low_process">Chậm tiến độ</string>
+
+    <!-- pie chart 2 -->
+    <string name="received">Đã tiếp nhận(%d)</string>
+    <string name="also_receive">Chờ tiếp nhận(%d)</string>
+    <string name="rejected_chart">Đã từ chối(%d)</string>
+
+    <!-- pie chart 3 -->
+    <string name="checked_chart">Đã hoàn trả</string>
+    <string name="not_controlled">Chưa hoàn trả</string>
+
+    <!-- text dialog -->
+    <string name="text_confirm_dialog">Xác nhận phiếu xuất kho</string>
+    <string name="text_require_dialog">Mã yêu cầu </string>
+    <string name="text_show_dialog">YCXK_VTM/17/002346</string>
+    <string name="text_code_bill">Mã phiếu</string>
+    <string name="text_code_bill_with_index">%d. Mã phiếu</string>
+    <string name="text_bill">PXK_VTM/17/005331</string>
+    <string name="received_bill">Tiếp nhận phiếu xuất kho</string>
+    <string name="dialog_cancle">Hủy</string>
+    <string name="dialog_title_cancle">Lý do từ chối</string>
+    <string name="dialog_title_please_comment">Xin ý kiến</string>
+    <string name="text_hint_dialog_confirm">Nhập lý do từ chối</string>
+    <string name="confirm_cancle">Xác nhận từ chối</string>
+    <string name="name_material_acceptance">Tên vật tư - thiết bị</string>
+    <string name="cable">Cáp đồng trục 16x28 mm</string>
+    <string name="code_material_acceptance">Mã vật tư - thiết bị</string>
+    <string name="create_new_cv">Tạo mới công việc</string>
+    <string name="input_content">Nhập nội dung</string>
+    <string name="input_content_work">Nhập nội dung công việc</string>
+    <string name="person_in_charge">Người thực hiện</string>
+    <string name="please_choose"><font size="15"><i>Vui lòng chọn</i></font></string>
+    <string name="please_input">Bạn chưa cập nhật tiến độ.</string>
+    <string name="please_take_image">Vui lòng chụp ảnh đính kèm.</string>
+    <string name="fail_info">Thông tin độ dài tuyến nhập sai</string>
+    <string name="from_day">Thời gian từ ngày</string>
+    <string name="to_day">Đến ngày</string>
+    <string name="complete_category">Hạng mục hoàn thành</string>
+    <string name="complete_category1">Hạng mục hoàn thành (%s)</string>
+    <string name="confirm_category">Đã xác nhận</string>
+    <string name="dont_complete">Chưa xác nhận</string>
+    <string name="complete_category_details">Hoàn thành hạng mục</string>
+    <string name="save">Lưu</string>
+    <string name="text_again_exit">Nhấn thêm lần nữa để thoát</string>
+    <string name="work_day">Công việc trong ngày (%s)</string>
+
+    <string name="camera_provider">com.viettel.construction.fileprovider</string>
+    <string name="did_not_perform">Chưa thực hiện</string>
+    <string name="in_process_1">Đang thực hiện</string>
+    <string name="on_pause">Tạm dừng</string>
+    <string name="back">Quay lại</string>
+
+    <string name="watch_personal_debt">Xem công nợ cá nhân</string>
+    <string name="transfer_material">Bàn giao VTTB</string>
+    <string name="receiver">Người nhận</string>
+    <string name="receiver_with">Người nhận</string>
+    <string name="handover_person">Người giao</string>
+    <string name="transfer">Bàn giao</string>
+    <string name="list_transfer_material">Danh sách VTTB bàn giao</string>
+
+    <string name="updated">Đã cập nhật thành công.</string>
+    <string name="update_fail">Cập nhật thất bại.</string>
+    <string name="debt_user">Xem công nợ cá nhân</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="num5">5</string>
+
+    <string name="warning_user_have_not_fill_edit_text">Bạn chưa nhập lý do tạm dừng.</string>
+    <string name="warning_user_have_not_fill_edit_text_reflect">Bạn chưa nhập nội dung phản ánh.</string>
+    <string name="warning_user_have_not_choose_construction">Bạn chưa chọn công trình.</string>
+    <string name="warning_user_input_wrong_type">Bạn đã nhập sai.</string>
+    <string name="enter">Nhập</string>
+    <string name="please_choose_category">Vui lòng chọn các mục trước đó</string>
+    <string name="please_choose_person">Vui lòng chọn nhân viên khác.</string>
+
+    <string name="hshc_work">Công việc làm hồ sơ hoàn công cho công trình %s</string>
+    <string name="revenue_work">Công việc lên doanh thu cho công trình %s</string>
+    <string name="suggest_work">Công việc tạo đề nghị cho công trình %s</string>
+    <string name="no_data">Không có dữ liệu.</string>
+    <string name="error_mes">Có lỗi xảy ra.</string>
+    <string name="error_mes_notok">Cập nhập không thành công</string>
+
+
+    <string name="choose"></string>
+    <string name="without_problem">Hết vướng</string>
+    <string name="wait_for_confirm_cnt">Chưa có xác nhận của CĐT</string>
+    <string name="confirmed_cnt">Đã xác nhận của CĐT</string>
+    <string name="zero">0</string>
+    <string name="login_s07">Ẩn mật khẩu</string>
+    <string name="login_s08">Hiện mật khẩu</string>
+    <string name="supplier_a">A cấp</string>
+    <string name="supplier_b">B cấp</string>
+    <string name="received_bill_menu">Đã tiếp nhận</string>
+    <string name="wait_for_receive">Chờ tiếp nhận</string>
+    <string name="rejected">Đã từ chối</string>
+
+    <string name="wait_for_confirm_1">Chờ xác nhận</string>
+    <string name="confirmed">Đã xác nhận</string>
+    <string name="deny">Từ chối xác nhận</string>
+    <string name="confirm_delivery_bill_title_dialog">Xác nhận chuyển phiếu xuất kho</string>
+    <string name="change_person">Chuyển người</string>
+
+    <string name="hint_search_personal_debt">Tên VTTB/ Serial</string>
+
+    <string name="rejected_success">Từ chối thành công.</string>
+    <string name="rejected_false">Từ chối thất bại.</string>
+    <string name="confirm_false">Xác nhận thất bại.</string>
+    <string name="confirm_success">Xác nhận thành công.</string>
+    <string name="serial_material">Serial: %s</string>
+    <string name="detail_impelent_pos">%d. Số lượng</string>
+    <string name="delivery_bill_pos">%d. Mã yêu cầu</string>
+    <string name="update_version">Hệ thống đã có phiên bản mới, bạn phải cập nhật phiên bản mới về để sử dụng.</string>
+    <string name="mpackage">com.viettel.construction</string>
+    <string name="server_error">Có lỗi xảy ra vui lòng thử lại.</string>
+    <string name="wrong">Tài khoản hoặc mật khẩu không hợp lệ.</string>
+
+    <string name="construction_management">Quản lý công trình</string>
+    <string name="month_plan">KH Tháng</string>
+    <string name="percent_complete">%d %</string>
+    <string name="construction_in_month">Công trình trong tháng</string>
+    <string name="have_not_finish">Chưa hoàn thành</string>
+    <string name="finished">Đã hoàn thành</string>
+    <string name="construction_with_problem">Công trình vướng</string>
+    <string name="ComplainTitle">Công trình vướng (%s)</string>
+    <string name="text_file">File vướng</string>
+    <string name="status">Trạng thái</string>
+    <string name="condition">Tình trạng BG</string>
+    <string name="condition_1">Tình trạng</string>
+    <string name="receive">Tiếp nhận</string>
+    <string name="handover">Bàn giao</string>
+    <string name="wait_for_confirm">Chờ tiếp nhận</string>
+    <string name="received_history">Đã nhận</string>
+    <string name="refuse_history">Từ chối</string>
+    <!--History handover material-->
+    <string name="history_handover_material">Lịch sử bàn giao VTTB(%s)</string>
+    <string name="text_motion_dialog">Xác nhận chuyển phiếu xuất kho</string>
+    <string name="add">Thêm</string>
+    <string name="created_entangle">Tạo vướng thành công.</string>
+    <string name="created_fail">Tạo vướng thất bại.</string>
+    <string name="created_entangle_title">Tạo công trình vướng</string>
+    <string name="type_work">Loại công việc</string>
+    <string name="create_suggest">Tạo đề nghị</string>
+    <string name="revenue">Lên doanh thu</string>
+    <string name="please_insert_param">Vui lòng nhập khối lượng.</string>
+    <string name="sum_large">Tổng khổi lượng lớn hơn</string>
+    <string name="dont_update">Công trình chưa có khối lượng, vui lòng bổ sung.</string>
+    <string name="dont_delete_form">Hình thức này không thể xóa.</string>
+    <string name="deleted">Đã xóa nghiệm thu thành công.</string>
+    <string name="delete_fail">Xóa nghiệm thu thất bại.</string>
+    <string name="please_update">Vui lòng cập nhật lại dữ liệu.</string>
+    <string name="dont_delete_image_acceptance">Công việc nghiệm thu bạn không thể xóa ảnh.</string>
+    <string name="dont_delete_image_refund">Công việc hoàn trả bạn không thể xóa ảnh.</string>
+    <string name="please_enter_entangle">Vui lòng nhập nội dung vướng.</string>
+    <string name="please_enter_construction_entangle">Vui lòng nhập mã công trình.</string>
+    <string name="want_open">Phản ánh đang đóng, bạn có muốn mở không?</string>
+    <string name="please_input_content_reflect">Bạn chưa nhập nội dung phản ánh.</string>
+    <string name="please_input_construction">Bạn chưa chọn công trình.</string>
+    <string name="dangnhap">Đăng nhập</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="viec_trong_ngay">Việc trong ngày</string>
+    <string name="phan_anh">Phản ánh</string>
+    <string name="hang_muc_ht">Hạng mục HT</string>
+    <string name="more">Khác</string>
+
+    <string-array name="spn_reflect">
+        <item>Vật tư thiết bị</item>
+        <item>Dân phản đối</item>
+        <item>Chậm mặt bằng</item>
+    </string-array>
+    <string name="title_activity_test">TestActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="da_hoan_tra">Đã hoàn trả</string>
+    <string name="da_nhan">Đã nhận</string>
+    <string name="chua_nhan">Chưa nhận</string>
+    <string name="chua_hoan_tra">Chưa hoàn trả</string>
+    <string name="msg_error">Có lỗi xảy ra vui lòng thử lại.</string>
+    <string name="NoData">Không có dữ liệu.</string>
+    <string name="ma_phieu">Mã phiếu</string>
+    <string name="tu_choi">Từ chối</string>
+    <string name="xacnhan">Xác nhận</string>
+    <string name="phieu_xuat_kho">Phiếu xuất kho</string>
+    <string name="cho_xac_nhan">Chờ xác nhận</string>
+    <string name="da_xac_nhan">Đã xác nhận</string>
+    <string name="TuChoiXacNhan">Từ chối xác nhận</string>
+    <string name="qua_han">Quá hạn</string>
+    <string name="PercentWarning">Vui lòng nhập tiến độ công việc phải lớn hơn tiến độ trước đó.</string>
+    <string name="tamDung">Tạm dừng</string>
+    <string name="TiepTuc">Tiếp tục</string>
+    <string name="TaskStopToContinue">Công việc này đã chuyển sang trạng thái Tiếp Tục.</string>
+    <string name="TaskContinueToStop">Công việc đã chuyển sang trạng thái Tạm Dừng.</string>
+    <string name="PercentRangWarning">Vui lòng nhập từ 0 - 100%</string>
+
+    <string name="log_name">Công trình v1.0</string>
+    <string name="selectConstruction">Chọn công trình</string>
+    <string name="select_employee">Chọn người thực hiện</string>
+    <string name="selectCategory">Chọn hạng mục</string>
+    <string name="ComplainDetail">Chi tiết phản ánh</string>
+    <string name="Detail">Chi tiết</string>
+    <string name="updateProgress">Cập nhật tiến độ</string>
+    <string name="NghiemThuTitle">Nghiệm thu (%s)</string>
+    <string name="HangMucTitle">Hạng mục (%s)</string>
+    <string name="PhieuXuatKhoTitle">Phiếu xuất kho (%s)</string>
+    <string name="BanGiaoMB_Title">Nhận BGMB (%s)</string>
+    <string name="GiamSatTitle">Giám sát (%s)</string>
+    <string name="KHThangTitle">KH Tháng (%s)</string>
+    <string name="ThiCongTitle">Thi công (%s)</string>
+    <string name="DenyCamera">Bạn đã từ chối quyền truy cập vào Camera, vui lòng vào thiết lập cho phép quyền mới có thể sử dụng.</string>
+    <string name="DenyGPS">Bạn đã từ chối quyền truy cập vào GPS, vui lòng vào thiết lập cho phép quyền mới có thể sử dụng.</string>
+    <string name="DenyReadMemory">Bạn đã từ chối quyền truy cập đọc bộ nhớ, vui lòng vào thiết lập cho phép quyền mới có thể sử dụng.</string>
+    <string name="DenyWriteMemory">Bạn đã từ chối quyền truy cập ghi bộ nhớ, vui lòng vào thiết lập cho phép quyền mới có thể sử dụng.</string>
+    <string name="setting">Thiết lập</string>
+    <string name="denyGPSWarning">Bạn đã từ chối mở quyền GPS, vì vậy bạn không thể sử dụng được chức năng này.</string>
+    <string name="WaitingGetLocationWarning">Chưa lấy được tọa độ chỗ bạn đứng, vui lòng thử lại sau.</string>
+    <string name="AskLogout">Bạn có thực sự muốn đăng xuất không?</string>
+    <string name="Yes">Có</string>
+    <string name="confirmCompletedWorkItem">Bạn đã hoàn thành toàn bộ công việc trong hạng mục \"%s\" vui lòng xác nhận Hoàn Thành.</string>
+    <string name="Confirm">Xác nhận</string>
+    <string name="Cancel">Hủy</string>
+    <string name="DelFunding">Xóa hoàn trả</string>
+    <string name="Funding">Hoàn trả</string>
+    <string name="DelAcceptance">Xóa nghiệm thu</string>
+    <string name="Acceptance">Ghi lại</string>
+    <string name="warningSolveEntangle">Công trình đang bị vướng. Nhấn tiếp tục để giải quyết Hết Vướng.</string>
+    <string name="Conitune">Tiếp tục</string>
+    <string name="No">Không</string>
+    <string name="Processing">Đang xử lý...</string>
+    <string name="Pending">Tạm dừng</string>
+    <string name="selectImage">Chọn ảnh</string>
+    <string name="ConstructionInfoTitle">Cập nhật thông tin công trình</string>
+
+
+    <!--Error message for input text box-->
+    <string name="please_take_camera">Vui lòng chụp ảnh đính kèm.</string>
+    <string name="please_input_so_mo_co">Vui lòng nhập số mo co</string>
+    <string name="please_input_do_cao_cot">Vui lòng nhập độ cao cột.</string>
+    <string name="please_input_vuong">Vui lòng nhập nội dung vướng.</string>
+    <string name="please_input_may_do">Vui lòng nhập nội dung may do.</string>
+
+    <!---->
+    <string name="dang_vuong_khong_the_tiep_tuc">Công trình đang gặp vướng, bỏ tích chọn vướng để tiếp tục. </string>
+    <string name="xac_nhan_ket_thuc_dong_bo">Công trình sẽ kết thúc đồng bộ, không thể tiếp tục thực hiện được nữa. Bạn có chắc chắn không?</string>
+    <string name="cong_trinh_gap_vuong">Công trình \ngặp vướng</string>
+    <string name="vuong_ktdb">Vướng kết thúc \nđồng bộ</string>
+
+    <!--Screen pxk voi pading-->
+    <string name="pxk_paging_all">Phiếu xuất kho (%d)</string>
+    <string name="pxk_paging_da_tiep_nhan">Đã tiếp nhận (%d)</string>
+    <string name="pxk_paging_cho_tiep_nhan">Chờ tiếp nhận (%d)</string>
+    <string name="pxk_paging_da_tu_choi">Đã từ chối (%d)</string>
+    <string name="pxk_paging_cho_xac_nhan">Chờ xác nhận (%d)</string>
+    <string name="pxk_paging_da_xac_nhan">Đã xác nhận (%d)</string>
+    <string name="pxk_paging_tu_choi_xac_nhan">Từ chối xác nhận(%d)</string>
+    <string name="pxk_paging_qua_han">Quá hạn (%d)</string>
+    <string name="pxk_paging_search">Search: (%d) kết quả</string>
+
+    <string name="miss_input_user_deliver">Vui lòng chọn người bàn giao</string>
+    <string name="miss_input_list_deliver">Vui lòng chọn phiếu cần bàn giao</string>
+    <string name="anh_phieu_xuatkho">Ảnh chụp phiếu xuất kho</string>
+    <string name="confirm_delete_image">Quay lại sẽ xóa hết ảnh chụp phiếu xuất kho !</string>
+    <string name="deficiency_image">Bạn cần có ít nhất 1 ảnh phiếu xuất kho</string>
+    <string name="real_date_confirm">Ngày thực nhận không được để trông</string>
+    <string name="pull_to_refresh_text_release">Thả tay để làm mới</string>
+    <string name="pull_to_refresh_text_pulling">Kéo xuống để làm mới</string>
+    <string name="pull_to_refresh_text_refreshing">Đang cập nhập...</string>
+    <string name="pull_to_refresh_text_finish">Cập nhập thành công</string>
+    <string name="pull_to_refresh_text_update">\'Cập nhật lần cuối lúc:\' HH:mm</string>
+    <string name="title_dynamicfeature">Module Title</string>
+    // status WO
+    <string name="assign_cd">Chờ CD tiếp nhận</string>
+    <string name="accept_cd">CD tiếp nhận</string>
+    <string name="reject_cd">CD từ chối</string>
+    <string name="assign_ft">Chờ FT tiếp nhận</string>
+    <string name="accept_ft">FT tiếp nhận</string>
+    <string name="reject_ft">FT từ chối</string>
+    <string name="processing">Đang thực hiện</string>
+    <string name="ok">Kết thúc</string>
+    <string name="done">Hoàn thành</string>
+    <string name="ng">Chưa hoàn thành</string>
+
+
+</resources>

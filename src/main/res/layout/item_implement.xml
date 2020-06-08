@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ln_implement"
+    android:layout_margin="0.5dp"
+    android:background="@color/colorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginBottom="@dimen/dimen_8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50"
+        android:id="@+id/bill_detail">
+        <LinearLayout
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_marginLeft="@dimen/dimen_16"
+                android:layout_marginTop="@dimen/dimen_8"
+                android:layout_marginBottom="@dimen/dimen_8"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_postion"
+                    style="@style/BlackText_medium"
+                    android:text="..."
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txt_name"
+                    style="@style/BlackText_medium"
+                    android:layout_marginLeft="@dimen/dimen_4"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/ic_expand"
+                android:layout_width="24dp"
+                android:layout_height="@dimen/dimen_32"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="2dp"
+                android:src="@drawable/ic_expand_more_24dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bill_detail_expand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/BlackText_medium_gray"
+                android:text="Mã vật tư: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txt_mavattu"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/BlackText_medium_gray"
+                android:text="Đơn vị tính: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txt_donvitinh"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_16"
+            android:layout_marginBottom="@dimen/dimen_8"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/BlackText_medium_gray"
+                android:text="Số lượng theo PXK: "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txt_soluong"
+                android:textColor="@color/colorBlack"
+                android:layout_marginLeft="@dimen/dimen_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_soluongthucnhan"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="@dimen/dimen_16"
+        android:layout_marginBottom="@dimen/dimen_8"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            style="@style/BlackText_medium_gray"
+            android:text="Số lượng thực nhận: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edt_soluongthucnhan"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_input"
+            android:paddingLeft="@dimen/dimen_10"
+            android:inputType="numberDecimal" />
+    </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

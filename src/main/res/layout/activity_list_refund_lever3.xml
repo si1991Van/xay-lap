@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_back_layout" android:id="@+id/lnHeader"/>
+
+    <LinearLayout
+        android:layout_below="@+id/lnHeader"
+        android:orientation="vertical"
+        android:layout_above="@id/txtFooter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:padding="8dp"
+            android:background="@drawable/border_dashboard"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_construction_code"
+                style="@style/WhiteText_large_bold"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                 />
+
+            <TextView
+                android:id="@+id/txt_construction_name"
+                style="@style/WhiteText_large_bold"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                 />
+
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_48"
+            app:tabBackground="@color/c3"
+            app:tabIndicatorColor="@color/c5"
+            app:tabMode="fixed"
+            app:tabSelectedTextColor="@color/c5"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="@color/black_base" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/c3"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingRight="@dimen/dimen_15">
+
+            <TextView
+                style="@style/BlackText_large_bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingRight="@dimen/dimen_8"
+                android:text="Ảnh" />
+
+            <ImageView
+                android:id="@+id/btn_camera"
+                android:layout_width="@dimen/dimen_32"
+                android:layout_height="@dimen/dimen_32"
+                android:background="?android:attr/selectableItemBackground"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_camera" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/grey1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcv_image"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginBottom="@dimen/dimen_4"
+            android:layout_marginLeft="@dimen/dimen_8"
+            android:layout_marginRight="@dimen/dimen_8"
+            android:layout_marginTop="@dimen/dimen_4"
+            android:scrollbarSize="5dp"
+            android:scrollbarThumbHorizontal="@drawable/shape_scrollbar"
+            android:scrollbars="horizontal" />
+
+
+
+    </LinearLayout>
+
+
+    <com.viettel.construction.screens.custom.dialog.CustomProgress
+        android:layout_centerInParent="true"
+        android:id="@+id/prg_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <TextView
+        android:id="@+id/txtFooter"
+        style="@style/WhiteText_medium"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Hoàn trả"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:background="@drawable/button_border_selector"
+        android:textColor="@color/white" />
+
+
+
+</RelativeLayout>
